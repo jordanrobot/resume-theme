@@ -1,6 +1,9 @@
 
                         <aside class="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
 
+                            {{ if .Site.Params.markets.enable }}
+                            {{ partial "markets.html" . }}
+                            {{ end }}
 
                             {{ if .Site.Params.awards.enable }}
                             {{ partial "awards.html" . }}
